@@ -1,0 +1,11 @@
+type Query {
+    problems: [Problem]
+}
+
+type Problem {
+    id: ID!
+    createDateTime: Date
+    title: String!
+    content: String!
+    tag: [String!]!
+}
